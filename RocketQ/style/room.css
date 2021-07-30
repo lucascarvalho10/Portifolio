@@ -1,0 +1,154 @@
+.content {
+    max-width: min(112rem, 90%);
+}
+
+#room header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#room header .buttons {
+    display: flex;
+
+}
+
+#room header .buttons .button:nth-child(1) {
+    margin-right: .8rem;
+    padding: 1.3rem 1.6rem;
+}
+
+#room header .buttons .button:nth-child(1) img{
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#room header .buttons .button:nth-child(2) {
+    margin-right: .8rem;
+    padding: 1.3rem 3.2rem;
+}
+
+#room header .buttons .button:nth-child(2) img{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Question form */
+
+#question-form h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: var(--black);
+
+    margin-bottom: 2.4rem;
+    line-height: 4.2rem;
+}
+
+#question-form form {
+    border: .2rem solid var(--grey-blue);
+    padding: 1.5rem;
+    border-radius: 0 .8rem .8rem .8rem;
+
+    margin-bottom: 1.6rem;
+}
+
+#question-form form textarea {
+    resize: none;
+    background: transparent;
+
+    outline: none;
+    width: 100%;
+}
+
+
+#question-form form textarea::placeholder {
+    color: var(--grey-blue);
+}
+
+#question-form form footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* O sinal > garante que está buscando as filhas diretas */
+#question-form form footer > div{
+    display: flex;
+    align-items: center;
+    color: var(--icons-details);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+#question-form form footer > div img {
+    margin-right: .9rem;
+}
+
+#question-form form footer button {
+    height:auto;
+    padding: .8rem 2.4rem;
+    line-height: 2.4rem;
+}
+
+/* Questions */
+
+.question-wrapper {
+    background: var(--light-blue);
+    margin-bottom: .8rem;
+    border-radius: 0 .8rem .8rem .8rem;
+
+    padding: 2.4rem;
+}
+
+.question-wrapper .question-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-wrapper .question-content p{
+    margin-left: 1.6rem;
+    /* Quebra a linha da pergunta para manter o layout bonito! */
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
+    justify-content: justify;
+}
+
+.question-wrapper .actions:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question-wrapper .actions > a{
+    display: flex;
+    align-items: center;
+}
+
+.question-wrapper .actions > a > img{
+    margin-right: .8rem;
+}
+
+/* Laranja: margem. Verde: padding. Azul: o conteúdo em si 
++: busca o irmão. Neste caso, a é irmão de a.   
+Poderia ser p irmao de a ou algo do tipo
+*/
+.question-wrapper .actions > a + a{
+    margin-left: 2.4rem;
+}
+
+/* Question read */
+.read {
+    background: #EAECF2;
+}
+
+/* .read .question-content .user {
+    background: var(--grey-blue);
+} */

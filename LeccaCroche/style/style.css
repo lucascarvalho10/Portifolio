@@ -1,0 +1,331 @@
+/* Configurações globais  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+html {
+    background-color: #ffffff;
+    color: #555;
+    font-family: 'Handlee', cursive, "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/* === FONTES, CORES E IMAGENS === */
+
+:root{
+    --branco: #fff;
+    --rosa: #FFC6FF;
+    --azul: #9BF6FF;
+    --cinza: #f3f3f3;
+}
+
+.img_valeria{
+    z-index: 1;
+    box-shadow: #000;
+    border-radius: 12px;
+}
+
+/*  === Media queries ===  */
+
+/* técnica básica: basear-se no tamanho da fonte */
+@media(max-width: 1080px){
+    html{
+        font-size: 82.8%;
+    }
+}
+
+@media(max-width: 760px){
+    html{
+        font-size: 64.2%;
+    }
+}
+
+@media(max-width: 480px){
+    html{
+        font-size: 52%;
+    }
+}
+
+/* === GERENCIAMENTO === */
+
+h1, 
+h2,
+h3{
+    font-weight: 300;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--branco);
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1.25px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: var(--rosa);
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    color: var(--rosa);
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /* alinhamento de textos e íconces*/
+    line-height: 120px;
+    vertical-align: middle; 
+    margin-top: -40px;
+}
+
+.no-shadows {
+    box-shadow: none!important;  /* Comando que retira as sombras */
+}
+
+/* === Header === */
+
+/* === Barra de navegação === */
+
+.head{
+    position: relative;
+    background-color:var(--rosa);
+    height: 100%
+}
+
+.minhanavbar{
+    background-color: var(--rosa);
+    padding-top: 20px;
+    padding-right: 120px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    color: var(--azul);
+    background-color: var(--rosa);
+}
+
+/* === LOGO === */
+
+.logo{
+    margin-top: 60px;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+}
+
+.titulo {
+    margin-top: 30px;
+}
+
+.subtitulo {
+    margin-top: -60px;
+}
+
+.subtitulo h3{
+    color: var(--branco);
+    padding-left: 70px;
+}
+
+/*===  QUEM SOMOS === */
+
+.passos{
+    margin-bottom: 50px;
+}
+
+.passos:last-of-type{
+    margin-bottom: 80px;
+}
+
+.passos div{
+    color: var(--rosa);
+    border: 2px solid var(--rosa);
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+
+
+
+/*=== Projetos ===*/
+.projetos{
+    background-color: var(--cinza);
+    margin-bottom: 0px;
+    padding: 0;
+    padding-top: 0.05rem;
+}
+
+.trabalhos{
+    list-style: none;
+    width: 100%;
+}
+
+.trabalhos li{
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
+
+.trab{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.trab img{
+    opacity: 0.7;
+    width: 100%;
+    height: 60%;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.trab img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/*=== Preços === */
+.precos{
+    background-color: #fff;
+}
+
+.card{
+    color: var(--azul);
+    background-color: #FFFFFC;
+}
+
+.pedido{
+    background-color: var(--azul);
+    color: #fff;
+    border-radius: 12%;
+    opacity: 0.9;
+    padding-bottom: 10px;
+}
+
+.pedido:hover{
+    background-color: #fff;
+    color: var(--rosa);
+    border: solid var(--rosa);
+}
+
+/* === Footer ===*/
+
+footer{
+    background-color: var(--rosa);
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: var(--branco);
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: var(--azul);
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 140%;
+}
+
+.face,
+.whatsapp,
+.ig,
+.linkedin {
+    transition: color 0.2s;
+}
+
+
+.face:hover{
+    color: #3b5998;
+}
+
+.whatsapp:hover{
+    color: #53cc5d;
+}
+.ig:hover{
+    color: #d881d4;
+}
+.pinterest:hover{
+    color: #cc5359;
+}
+
+
+footer p{
+    color: var(--branco);
+    text-align: center;
+    margin-top: 20px;
+}
